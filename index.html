@@ -1,0 +1,78 @@
+<html lang="en">
+  <head>
+    <title>Address Book</title>
+    <link rel="stylesheet" href="styleSheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Roboto:300,700"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JavaScript.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Address Book</h1>
+    </header>
+    <main>
+      <!-- navigation  -->
+      <div class="navigation">
+        <ul class="navigationBar">
+          <li>Create New Contact</li>
+          <li>Contacts</li>
+        </ul>
+      </div>
+      <!-- new contact form -->
+      <div class="tabsContainer">
+        <div class="tabSection">
+          <h2>Create New Contact</h2>
+          <form>
+            <input name="firstName" type="text" placeholder="First Name" />
+            <input name="lastName" type="text" placeholder="Last Name" />
+            <input name="phoneNumber" type="text" placeholder="123-456-7890" />
+            <input
+              name="address"
+              type="text"
+              placeholder="Address"
+            /><br /><br />
+            <button id="createContact" type="submit">Create</button>
+          </form>
+        </div>
+        <!-- show all contacts and search through them -->
+        <div class="tabSection">
+          <!--Search-->
+          <h2>Search Contact</h2>
+          <form>
+            <label>
+              <input
+                type="text"
+                name="search"
+                id="searchContact"
+                placeholder="Enter First or Last Name of Contact"
+              />
+            </label>
+          </form>
+          <!--All Contacts-->
+          <h2>Show All Contacts</h2>
+          <ul class="allContacts" id="contacts">
+            <li class="contact">
+              First Name- 111-111-1111, Danforth Avenue, North York, ON,
+              Canada<button class="delete"><i class="fa fa-trash"></i></button
+              ><br />
+            </li>
+            <li class="contact">
+              First Name - 222-222-2222, Danforth Avenue, Toronto, ON,
+              Canada<button class="delete"><i class="fa fa-trash"></i></button
+              ><br />
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer>Made by Iuliia Pavlova for Codeworks Coding Assignment</footer>
+  </body>
+</html>
